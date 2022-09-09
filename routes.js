@@ -1,8 +1,20 @@
 const createFile = require("fs");
+const Produto = require('./product');
+
 
 const requestHandler = (req, res) => {
   const url = req.url;
   const method = req.method;
+
+if (url === '/produtos'){
+  const resultado =  Produto.findAll().then(produtos =>{
+    console.log(produtos)
+    res.end(JSON.stringify(produtos));
+
+  });
+  
+}
+
   if (url === "/") {
     res.write("<html>");
 
@@ -33,12 +45,14 @@ const requestHandler = (req, res) => {
       });
     });
   }
-
+/*
   res.setHeader("Content-Type", "text/html");
   res.write("<html>");
   res.write("<head><title>My First Page</title><head>");
   res.write("<body><h1>Hello do meu Servidor Node.js!</h1></body>");
   res.write("<html>");
   res.end();
+*/
+
 };
 module.exports = requestHandler;
