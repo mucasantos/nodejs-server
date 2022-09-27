@@ -97,8 +97,7 @@ const requestHandler = (req, res) => {
       createFile.appendFile("atividade2TI.txt", parsedBody, () => {
         res.statusCode = 302;
         // res.setHeader("Location", "/");
-        res.write("Seu MB foi aceito com sucesso!");
-        return res.end();
+res.write(JSON.stringify({message: "Seu MB foi aceito com sucesso!"}))        return res.end();
       });
     });
   }
