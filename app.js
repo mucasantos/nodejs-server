@@ -1,3 +1,6 @@
+/* Criando um servidor HTTP*/ 
+
+// carregar o módulo http
 const http = require("http");
 const routes = require("./routes");
 

@@ -43,7 +43,7 @@ const requestHandler = (req, res) => {
         telefone: message.telefone,
         turma: message.turma,
       }); */
-      res.write( "Dados salvos com sucesso!" );
+      res.write("Dados salvos com sucesso!");
       return res.end();
     });
   }
@@ -97,7 +97,8 @@ const requestHandler = (req, res) => {
       createFile.appendFile("atividade2TI.txt", parsedBody, () => {
         res.statusCode = 302;
         // res.setHeader("Location", "/");
-res.write(JSON.stringify({message: "Seu MB foi aceito com sucesso!"}))        return res.end();
+        res.write(JSON.stringify({ message: "Seu MB foi aceito com sucesso!" }))
+        return res.end();
       });
     });
   }
