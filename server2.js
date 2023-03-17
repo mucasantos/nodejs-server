@@ -34,7 +34,6 @@ app.post('/pessoa', (req, res) => {
     console.log(nome)
     console.log(email)
 
-
 })
 
 //2.Iniciar o servidor
