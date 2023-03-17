@@ -1,0 +1,4 @@
+1. Utilizar o arquivo server.js e exercícios DELE
+
+2. Para a parte do express, utilizar o arquivo server2.js
+

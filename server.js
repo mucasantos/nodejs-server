@@ -65,3 +65,6 @@ console.log("Servidor iniciado...");
 
 // Parte 3 ==> Exercicio = Criar rotas que devolva os seguintes dados:
 // europa , usa , cilindros
+
+
+//Parte 4 => falar dos verbos: GET e POST antes do Express
